@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기술 블로그 모음</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>기술 블로그 모음</h1>
+            <p class="subtitle">국내외 IT 기업 및 기술 콘텐츠 플랫폼을 한 곳에서 모아보세요</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="기업명, 키워드로 검색하기...">
+        </div>
+
+        <div class="category-tabs">
+            <div class="category-tab active" data-category="all">전체</div>
+            <div class="category-tab" data-category="korea-it">국내 IT 기업</div>
+            <div class="category-tab" data-category="korea-platform">국내 콘텐츠 플랫폼</div>
+            <div class="category-tab" data-category="global-it">해외 IT 기업</div>
+        </div>
+
+        <div id="koreaIT" class="section">
+            <h2 class="section-title">🇰🇷 국내 IT 기업 기술 블로그</h2>
+            <div class="blog-grid">
+                <!-- 카카오 -->
+                <div class="blog-card" data-category="korea-it" data-keywords="카카오 개발 tech 테크">
+                    <div class="blog-card-content">
+                        <h3>카카오</h3>
+                        <div class="tags">
+                            <span class="tag">국내</span>
+                            <span class="tag">개발 사례</span>
+                        </div>
+                        <p>카카오의 개발 사례 중심 기술 블로그</p>
+                        <a href="https://tech.kakao.com" target="_blank" class="visit-button">방문하기</a>
+                    </div>
+                </div>
+                
+                <!-- 쿠팡 -->
+                <div class="blog-card" data-category="korea-it" data-keywords="쿠팡 Coupang 개발 스토리 이커머스">
+                    <div class="blog-card-content">
+                        <h3>쿠팡</h3>
+                        <div class="tags">
+                            <span class="tag">국내</span>
+                            <span class="tag">이커머스</span>
+                        </div>
+                        <p>Coupang 개발 스토리를 다루는 기술 블로그</p>
+                        <a href="https://medium.com/coupang-tech" target="_blank" class="visit-button">방문하기</a>
+                    </div>
+                </div>
+                
+                <!-- 왓챠 -->
+                <div class="blog-card" data-category="korea-it" data-keywords="왓챠 OTT 미디어 스트리밍">
+                    <div class="blog-card-content">
+                        <h3>왓챠</h3>
+                        <div class="tags">
+                            <span class="tag">국내</span>
+                            <span class="tag">OTT</span>
+                            <span class="tag">미디어</span>
+                        </div>
+                        <p>OTT 중심 기술 블로그</p>
+                        <a href="https://medium.com/watcha" target="_blank" class="visit-button">방문하기</a>
+                    </div>
+                </div>
+                
+                <!-- 마켓컬리 -->
+                <div class="blog-card" data-category="korea-it" data-keywords="마켓컬리 푸드테크 이커머스 식품">
+                    <div class="blog-card-content">
+                        <h3>마켓컬리</h3>
+                        <div class="tags">
+                            <span class="tag">국내</span>
+                            <span class="tag">푸드테크</span>
+                            <span class="tag">이커머스</span>
+                        </div>
+                        <p>푸드테크 중심 기술 블로그</p>
+                        <a href="https://thefarmersfront.github.io" target="_blank" class="visit-button">방문하기</a>
+                    </div>
+                </div>
+                
+                <!-- 우아한형제들 -->
+                <div class="blog-card" data-category="korea-it" data-keywords="우아한형제들 배달의민족 배민 배달 푸드테크">
+                    <div class="blog-card-content">
+                        <h3>우아한형제들</h3>
+                        <div class="tags">
+                            <span class="tag">국내</span>
+                            <span class="tag">배달</span>
+                            <span class="tag">푸드테크</span>
+                        </div>
+                        <p>배달의민족 서비스 개발 관련 기술 블로그</p>
+                        <a href="https://woowabros.github.io" target="_blank" class="visit-button">방문하기</a>
+                    </div>
+                </div>
+                
+                <!-- 뱅크샐러드 -->
+                <div class="blog-card" data-category="korea-it" data-keywords="뱅크샐러드 핀테크 금융 금융기술">
+                    <div class="blog-card-content">
+                        <h3>뱅크샐러드</h3>
+                        <div class="tags">
+                            <span class="tag">국내</span>
+                            <span class="tag">핀테크</span>
+                            <span class="tag">금융</span>
+                        </div>
+                        <p>핀테크 기술을 다루는 블로그</p>
+                        <a href="https://blog.banksalad.com" target="_blank" class="visit-button">방문하기</a>
+                    </div>
+                </div>
+                
+                <!-- NHN -->
+                <div class="blog-card" data-category="korea-it" data-keywords="NHN 토스트 TOAST 클라우드">
+                    <div class="blog-card-content">
+                        <h3>NHN</h3>
+                        <div class="tags">
+                            <span class="tag">국내</span>
+                            <span class="tag">클라우드</span>
+                        </div>
+                        <p>TOAST Meetup 운영 기술 블로그</p>
+                        <a href="https://meetup.toast.com" target="_blank" class="visit-button">방문하기</a>
+                    </div>
+                </div>
+                
+                <!-- 하이퍼커넥트 -->
+                <div class="blog-card" data-category="korea-it" data-keywords="하이퍼커넥트 영상통신 AI 인공지능">
+                    <div class="blog-card-content">
+                        <h3>하이퍼커넥트</h3>
+                        <div class="tags">
+                            <span class="tag">국내</span>
+                            <span class="tag">영상통신</span>
+                            <span class="tag">AI</span>
+                        </div>
+                        <p>영상통신/AI 관련 기술 블로그</p>
+                        <a href="https://hyperconnect.github.io" target="_blank" class="visit-button">방문하기</a>
+                    </div>
+                </div>
+                
+                <!-- 당근마켓 -->
+                <div class="blog-card" data-category="korea-it" data-keywords="당근마켓 중고거래 플랫폼 커뮤니티">
+                    <div class="blog-card-content">
+                        <h3>당근마켓</h3>
+                        <div class="tags">
+                            <span class="tag">국내</span>
+                            <span class="tag">중고거래</span>
+                            <span class="tag">플랫폼</span>
+                        </div>
+                        <p>중고거래 플랫폼 기술 블로그</p>
+                        <a href="https://medium.com/daangn" target="_blank" class="visit-button">방문하기</a>
+                    </div>
+                </div>
+                
+                <!-- 강남언니 -->
+                <div class="blog-card" data-category="korea-it" data-keywords="강남언니 뷰티 메디컬 의료">
+                    <div class="blog-card-content">
+                        <h3>강남언니</h3>
+                        <div class="tags">
+                            <span class="tag">국내</span>
+                            <span class="tag">뷰티</span>
+                            <span class="tag">메디컬</span>
+                        </div>
+                        <p>뷰티 메디컬 플랫폼 기술 블로그</p>
+                        <a href="https://blog.gangnamunni.com" target="_blank" class="visit-button">방문하기</a>
+                    </div>
+                </div>
+                
+                <!-- 딜리버리코리아 -->
+                <div class="blog-card" data-category="korea-it" data-keywords="딜리버리코리아 요기요 배달통 배달 푸드테크">
+                    <div class="blog-card-content">
+                        <h3>딜리버리코리아</h3>
+                        <div class="tags">
+                            <span class="tag">국내</span>
+                            <span class="tag">배달</span>
+                            <span class="tag">푸드테크</span>
+                        </div>
+                        <p>요기요/배달통 관련 기술 블로그</p>
+                        <a href="https://medium.com/delivery-tech-korea" target="_blank" class="visit-button">방문하기</a>
+                    </div>
+                </div>
+                
+                <!-- 이스트소프트 -->
+                <div class="blog-card" data-category="korea-it" data-keywords="이스트소프트 AI 인공지능">
+                    <div class="blog-card-content">
+                        <h3>이스트소프트</h3>
+                        <div class="tags">
+                            <span class="tag">국내</span>
+                            <span class="tag">AI</span>
+                        </div>
+                        <p>AI 중심 기술 블로그</p>
+                        <a href="https://blog.est.ai" target="_blank" class="visit-button">방문하기</a>
+                    </div>
+                </div>
+                
+                <!-- 플랫팜 -->
+                <div class="blog-card" data-category="korea-it" data-keywords="플랫팜 이모티콘 콘텐츠">
+                    <div class="blog-card-content">
+                        <h3>플랫팜</h3>
+                        <div class="tags">
+                            <span class="tag">국내</span>
+                            <span class="tag">이모티콘</span>
+                            <span class="tag">콘텐츠</span>
+                        </div>
+                        <p>이모티콘 플랫폼 기술 블로그</p>
+                        <a href="https://medium.com/platfarm" target="_blank" class="visit-button">방문하기</a>
+                    </div>
+                </div>
+                
+                <!-- 레진코믹스 -->
+                <div class="blog-card" data-category="korea-it" data-keywords="레진코믹스 웹툰 콘텐츠 만화">
+                    <div class="blog-card-content">
+                        <h3>레진코믹스</h3>
+                        <div class="tags">
+                            <span class="tag">국내</span>
+                            <span class="tag">웹툰</span>
+                            <span class="tag">콘텐츠</span>
+                        </div>
+                        <p>웹툰 서비스 기술 블로그</p>
+                        <a href="https://tech.lezhin.com" target="_blank" class="visit-button">방문하기</a>
+                    </div>
+                </div>
+                
+                <!-- 스포카 -->
+                <div class="blog-card" data-category="korea-it" data-keywords="스포카 도도포인트 포인트 결제">
+                    <div class="blog-card-content">
+                        <h3>스포카</h3>
+                        <div class="tags">
+                            <span class="tag">국내</span>
+                            <span class="tag">포인트</span>
+                            <span class="tag">결제</span>
+                        </div>
+                        <p>도도포인트 관련 기술 블로그</p>
+                        <a href="https://spoqa.github.io" target="_blank" class="visit-button">방문하기</a>
+                    </div>
+                </div>
+                
+                <!-- 플라네타리움 -->
+                <div class="blog-card" data-category="korea-it" data-keywords="플라네타리움 블록체인 게임 NFT">
+                    <div class="blog-card-content">
+                        <h3>플라네타리움</h3>
+                        <div class="tags">
+                            <span class="tag">국내</span>
+                            <span class="tag">블록체인</span>
+                            <span class="tag">게임</span>
+                        </div>
+                        <p>블록체인 기반 게임 기술 블로그</p>
+                        <a href="https://snack.planetarium.dev" target="_blank" class="visit-button">방문하기</a>
+                    </div>
+                </div>
+                
+                <!-- 라인 -->
+                <div class="blog-card" data-category="korea-it" data-keywords="라인 LINE 메신저 채팅">
+                    <div class="blog-card-content">
+                        <h3>라인</h3>
+                        <div class="tags">
+                            <span class="tag">국내</span>
+                            <span class="tag">메신저</span>
+                        </div>
+                        <p>LINE 개발자 블로그</p>
+                        <a href="https://engineering.linecorp.com" target="_blank" class="visit-button">방문하기</a>
+                    </div>
+                </div>
+                
+                <!-- 쏘카 -->
+                <div class="blog-card" data-category="korea-it" data-keywords="쏘카 카셰어링 모빌리티">
+                    <div class="blog-card-content">
+                        <h3>쏘카</h3>
+                        <div class="tags">
+                            <span class="tag">국내</span>
+                            <span class="tag">카셰어링</span>
+                            <span class="tag">모빌리티</span>
+                        </div>
+                        <p>카셰어링 기술 블로그</p>
+                        <a href="https://tech.socarcorp.kr" target="_blank" class="visit-button">방문하기</a>
+                    </div>
+                </div>
+                
+                <!-- 리디 -->
+                <div class="blog-card" data-category="korea-it" data-keywords="리디 전자책 콘텐츠 리디북스">
+                    <div class="blog-card-content">
+                        <h3>리디</h3>
+                        <div class="tags">
+                            <span class="tag">국내</span>
+                            <span class="tag">전자책</span>
+                            <span class="tag">콘텐츠</span>
+                        </div>
+                        <p>전자책 플랫폼 기술 블로그</p>
+                        <a href="https://ridicorp.com/blog" target="_blank" class="visit-button">방문하기</a>
+                    </div>
+                </div>
+                
+                <!-- 네이버 D2 -->
+                <div class="blog-card" data-category="korea-it" data-keywords="네이버 D2 검색 포털">
+                    <div class="blog-card-content">
+                        <h3>네이버 D2</h3>
+                        <div class="tags">
+                            <span class="tag">국내</span>
+                            <span class="tag">포털</span>
+                            <span class="tag">검색</span>
+                        </div>
+                        <p>네이버의 대표 기술 블로그</p>
+                        <a href="https://d2.naver.com" target="_blank" class="visit-button">방문하기</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="koreaPlatform" class="section">
+            <h2 class="section-title">🇰🇷 국내 기술 콘텐츠 플랫폼</h2>
+            <div class="blog-grid">
+                <!-- Velog -->
+                <div class="blog-card" data-category="korea-platform" data-keywords="Velog 개인 블로그 개발자">
+                    <div class="blog-card-content">
+                        <h3>Velog</h3>
+                        <div class="tags">
+                            <span class="tag">국내</span>
+                            <span class="tag">개인 블로그</span>
+                        </div>
+                        <p>개발자 개인 블로그 플랫폼</p>
+                        <a href="https://velog.io" target="_blank" class="visit-button">방문하기</a>
+                    </div>
+                </div>
+                
+                <!-- 44BITS -->
+                <div class="blog-card" data-category="korea-platform" data-keywords="44BITS 클라우드 인프라 개발">
+                    <div class="blog-card-content">
+                        <h3>44BITS</h3>
+                        <div class="tags">
+                            <span class="tag">국내</span>
+                            <span class="tag">클라우드</span>
+                            <span class="tag">인프라</span>
+                        </div>
+                        <p>클라우드 중심 기술 블로그</p>
+                        <a href="https://44bits.io" target="_blank" class="visit-button">방문하기</a>
+                    </div>
+                </div>
+                
+                <!-- 개발자스럽다 -->
+                <div class="blog-card" data-category="korea-platform" data-keywords="개발자스럽다 뉴스 큐레이션 개발">
+                    <div class="blog-card-content">
+                        <h3>개발자스럽다</h3>
+                        <div class="tags">
+                            <span class="tag">국내</span>
+                            <span class="tag">뉴스</span>
+                            <span class="tag">큐레이션</span>
+                        </div>
+                        <p>개발 뉴스 큐레이션 블로그</p>
+                        <a href="https://blog.gaerae.com" target="_blank" class="visit-button">방문하기</a>
+                    </div>
+                </div>
+                
+                <!-- 프로그래머스 -->
+                <div class="blog-card" data-category="korea-platform" data-keywords="프로그래머스 코딩테스트 채용 개발자">
+                    <div class="blog-card-content">
+                        <h3>프로그래머스</h3>
+                        <div class="tags">
+                            <span class="tag">국내</span>
+                            <span class="tag">채용</span>
+                            <span class="tag">코딩테스트</span>
+                        </div>
+                        <p>채용 플랫폼, 코딩 테스트 사이트</p>
+                        <a href="https://programmers.co.kr" target="_blank" class="visit-button">방문하기</a>
+                    </div>
+                </div>
+                
+                <!-- GeekNews -->
+                <div class="blog-card" data-category="korea-platform" data-keywords="GeekNews 기술 뉴스 큐레이션">
+                    <div class="blog-card-content">
+                        <h3>GeekNews</h3>
+                        <div class="tags">
+                            <span class="tag">국내</span>
+                            <span class="tag">뉴스</span>
+                            <span class="tag">큐레이션</span>
+                        </div>
+                        <p>해외/국내 기술 뉴스 큐레이션</p>
+                        <a href="https://news.hada.io" target="_blank" class="visit-button">방문하기</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="globalIT" class="section">
+            <h2 class="section-title">🌍 해외 IT 기업 기술 블로그</h2>
+            <div class="blog-grid">
+                <!-- Facebook -->
+                <div class="blog-card" data-category="global-it" data-keywords="Facebook Meta 소셜 미디어">
+                    <div class="blog-card-content">
+                        <h3>Facebook (Meta)</h3>
+                        <div class="tags">
+                            <span class="tag">해외</span>
+                            <span class="tag">소셜 미디어</span>
+                        </div>
+                        <p>Meta 엔지니어링 블로그</p>
+                        <a href="https://engineering.fb.com" target="_blank" class="visit-button">방문하기</a>
+                    </div>
+                </div>
+                
+                <!-- Amazon Alexa -->
+                <div class="blog-card" data-category="global-it" data-keywords="Amazon Alexa 음성인식 AI">
+                    <div class="blog-card-content">
+                        <h3>Amazon Alexa</h3>
+                        <div class="tags">
+                            <span class="tag">해외</span>
+                            <span class="tag">음성인식</span>
+                            <span class="tag">AI</span>
+                        </div>
+                        <p>Alexa 기술 관련 블로그</p>
+                        <a href="https://developer.amazon.com" target="_blank" class="visit-button">방문하기</a>
+                    </div>
+                </div>
+                
+                <!-- Apple Developer -->
+                <div class="blog-card" data-category="global-it" data-keywords="Apple Developer iOS macOS 애플">
+                    <div class="blog-card-content">
+                        <h3>Apple Developer</h3>
+                        <div class="tags">
+                            <span class="tag">해외</span>
+                            <span class="tag">iOS</span>
+                            <span class="tag">macOS</span>
+                        </div>
+                        <p>애플 개발자 포털</p>
+                        <a href="https://developer.apple.com" target="_blank" class="visit-button">방문하기</a>
+                    </div>
+                </div>
+                <!-- Google Developers -->
+                <div class="blog-card" data-category="global-it" data-keywords="Google Developers 구글">
+                    <div class="blog-card-content">
+                        <h3>Google Developers</h3>
+                        <div class="tags">
+                            <span class="tag">해외</span>
+                            <span class="tag">구글</span>
+                        </div>
+                        <p>구글 개발자 블로그</p>
+                        <a href="https://developers.googleblog.com" target="_blank" class="visit-button">방문하기</a>
+                    </div>
+                </div>
